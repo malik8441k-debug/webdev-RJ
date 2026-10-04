@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Example</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <!-- The form tag wraps all form elements -->
+    <!-- action: where to send data; method: POST (secure/data submission) or GET (URL parameters) -->
+    <form action="/submit-form-url" method="POST">
+
+        <!-- Text Input -->
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+        </p>
+
+        <!-- Email Input -->
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </p>
+
+        <!-- Password Input -->
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+
+        <!-- Radio Buttons (Single Selection) -->
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </p>
+
+        <!-- Dropdown / Select List -->
+        <p>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="">--Select a Country--</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="india">India</option>
+            </select>
+        </p>
+
+        <!-- Checkboxes (Multiple Selections) -->
+        <p>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label forHere is a complete HTML web form template that includes commonly used input fields along with proper labeling, structuring, and validation attributes.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <!-- The form tag wraps all input controls -->
+    <form action="/submit-form" method="POST">
+
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+        <!-- Radio Buttons (Single Selection) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Dropdown Select Menu -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">-- Select Option --</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="india">India</option>
+            <option value="uk">United Kingdom</option>
+        </select><br><br>
+
+        <!-- Checkbox (Multiple Selection) -->
+        <label>Subscriptions:</label><br>
+        <input type="checkbox" id="newsletter" name="subscriptions" value="newsletter">
+        <label for="newsletter">Receive Monthly Newsletter</label><br>
+        <input type="checkbox" id="updates" name="subscriptions" value="updates">
+        <label for="updates">Receive Product Updates</label><br><br>
+
+        <!-- Multi-line Text Area -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+
+        <!-- Form Submission and Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
