@@ -12,3 +12,12 @@ p {
   font-size: 14px;
   line-height: 1.5;
 }
+/* p {
+  color: aqua;
+} */
+#intro {
+   color: green;
+}
+.note {
+  color: blueviolet;
+}
