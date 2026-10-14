@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio & Hub</title>
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fixed Header / Navigation -->
+    <header class="site-header">
+        <h1>DevHub Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-table">Tech Stack</a></li>
+                <li><a href="#contact">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-container">
+
+        <!-- Section: About / Intro -->
+        <section id="about" class="content-section">
+            <h2>Welcome to My Web Space</h2>
+            <p>This project demonstrates modern frontend engineering principles using <strong>semantic HTML5</strong> and advanced <strong>CSS styling</strong>.</p>
+        </section>
+
+        <!-- Article: Featured Post -->
+        <article class="content-article">
+            <h2>Understanding the CSS Box Model</h2>
+            <p>The standard and alternative box models dictate how element dimensions, padding, and borders are calculated across layouts.</p>
+        </article>
+
+        <!-- Table Section -->
+        <section id="skills-table" class="content-section">
+            <h2>Core Technologies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Category</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Structure</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Styling</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Git & GitHub</td>
+                        <td>Version Control</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section wrapped in Fieldset -->
+        <section id="contact" class="content-section">
+            <h2>Developer Registration</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <label for="role">Primary Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Select your track</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="fullstack">Full Stack Engineer</option>
+                    </select>
+
+                    <label for="comments">Project Bio / Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your background..."></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevHub Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
