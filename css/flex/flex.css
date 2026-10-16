@@ -3,6 +3,7 @@
   flex-direction: row;
   gap: 20px;
   background-color: rgb(26, 23, 223);
+  margin: 10px;
 }
 
 .container div {
@@ -17,6 +18,7 @@
   flex-direction: column;
   gap: 20px;
   background-color: rgb(26, 23, 223);
+  margin: 10px;
 }
 
 .container1 div {
@@ -29,12 +31,32 @@
 }
 .container2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   background-color: rgb(26, 23, 223);
+  margin: 10px;
+  flex-wrap: wrap;
 }
 
 .container2 div {
+  
+  background-color: #95b515;
+  margin: 10px;
+  padding: 20px;
+  font-size: 26px;
+  width: 100px;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: rgb(26, 23, 223);
+  margin: 10px;
+  height: 1300px;
+}
+
+.container3 div {
   
   background-color: #95b515;
   margin: 10px;
